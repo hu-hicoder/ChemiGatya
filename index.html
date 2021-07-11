@@ -23,29 +23,40 @@
 </head>
 
 <body>
+    <h1>
+        <div id="ga" class="alert alert-primary" role="alert">
+            化学ガチャをしよう
+        </div>
+    </h1>
     <div>
-        <h1>化学</h1>
+        
         <button id="push" class="favorite styled btn-text-3d" type="button">
             ボタンを押してください.
         </button>
-        <div>
-            結果
-        </div>
-
     </div>
-    <script>
-        function getRandomInt(max) {
-            return Math.floor(Math.random() * max);
-        }
+    <script >
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+    
+    let group = ['H2', 'O2', 'Cl2', 'F2', 'W'];
+    function gatya() {
+        let kekka = getRandomInt(group.length);
+        alert(group[kekka])
+    }
+    const el = document.getElementById("push");
+    el.addEventListener("click", gatya, false);
 
-        let group = ['H2', 'O2', 'Cl2', 'F2', 'W'];
-        function gatya() {
-            alert(group[getRandomInt(group.length)])
-        }
-        const el = document.getElementById("push");
-        el.addEventListener("click", gatya, false);
+    if(kekka == 0){
+        document.write(' <img src="H2.png" alt="title" ')
+    }
 
+    else if(kekka == 1){
+        document.write(' <img src="O2.png" alt="title" ')    
+    }
     </script>
+    <img src="gatya.png" class="machine" alt="">
+
 </body>
 
 </html>
