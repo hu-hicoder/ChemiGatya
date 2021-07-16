@@ -19,11 +19,20 @@
             top: 4px;
             text-shadow: none;
         }
+        
+        .first-picture{
+            width: 1000px;
+            height: 600px;
+        }
+        .H2{
+            width: 400px;
+            height: 400px;
+        }
+        
     </style>
 </head>
 
 <body>
-
     <h1>
         <div id="ga" class="alert alert-primary" role="alert">
             化学ガチャをしよう
@@ -35,6 +44,9 @@
         <button id="push" class="favorite styled btn-text-3d" type="button">
             ボタンを押してください.
         </button>
+    </div>
+    <div>
+        <img class ="first-picture" src="home.png" alt="ホーム画面">
     </div>
 
     <script >
@@ -48,11 +60,11 @@
     function gatya() {
         if(a==0){
             alert("H2");
-            document.write( '<img src="H2.png">' );
+            document.write( '<img src="H2.png" alt="" width="500" height="500">' );
         }
         else if(a==1){
             alert("O2");
-            document.write( '<img src="O2.png">');
+            document.write( '<img src="O2.png" alt="" width="500" height="500">');
         }
         else if(a==2){
             alert("Cl2");
@@ -67,7 +79,8 @@
     const el = document.getElementById("push");
     el.addEventListener("click", gatya, false);
     </script>
-    <img src="gatya.png" class="machine" alt="">
+
+
 
     </body>
 </html>
