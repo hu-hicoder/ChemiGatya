@@ -13,22 +13,18 @@
             font-size: 37px;
             color: #2149c0;
             text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.32), 0px 1px 0px #6182ca, 0px 2px 0px #4f6aa7, 0px 3px 0px #5470ad;
+
         }
 
         .btn-text-3d:active {
             top: 4px;
             text-shadow: none;
         }
-        
-        .first-picture{
+
+        .first-picture {
             width: 1000px;
             height: 600px;
         }
-        .H2{
-            width: 400px;
-            height: 400px;
-        }
-        
     </style>
 </head>
 
@@ -40,47 +36,79 @@
     </h1>
 
     <div>
-        
+
         <button id="push" class="favorite styled btn-text-3d" type="button">
             ボタンを押してください.
         </button>
     </div>
     <div>
-        <img class ="first-picture" src="home.png" alt="ホーム画面">
+        <img class="first-picture" src="photo\\home.png" alt="ホーム画面">
     </div>
 
-    <script >
-    function getRandomInt(max) {
-        return Math.floor(Math.random() * max);
-    }
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        let group = ['H2', 'O2', 'Cl2', 'F2', 'W'];
+
+        let a = getRandomInt(group.length);
+        function gatya() {
+            if (a == 0) {
+                alert("H2");
+                document.write('<img src="photo\\H2.png" alt="" width="500" height="500">')
+                document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
+                document.getElementById("home")
+                .addEventListener("click", function () {
+                location.replace("https://hu-hicoder.github.io/ChemiGatya/");
+                },false);
+            }
+
+            else if (a == 1) {
+                alert("O2");
+                document.write('<img src="photo\\O2.png" alt="" width="500" height="500">');
+                document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
+                document.getElementById("home")
+                .addEventListener("click", function () {
+                location.replace("https://hu-hicoder.github.io/ChemiGatya/");
+                },false);
+            }
+
+            else if (a == 2) {
+                alert("Cl2");
+                document.write('<img src="photo\\.png" alt="" width="500" height="500">');
+                document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
+                document.getElementById("home")
+                .addEventListener("click", function () {
+                location.replace("https://hu-hicoder.github.io/ChemiGatya/");
+                },false);
+            }
+
+            else if (a == 3) {
+                alert("F2");
+                document.write('<img src="photo\\F2.png" alt="" width="500" height="500">');
+                document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
+                document.getElementById("home")
+                .addEventListener("click", function () {
+                location.replace("https://hu-hicoder.github.io/ChemiGatya/");
+                },false);
+            }
+
+            else if (a == 4) {
+                alert("W");
+                document.write('<img src="photo\\.png" alt="" width="500" height="500">');
+                document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
+                document.getElementById("home")
+                .addEventListener("click", function () {
+                location.replace("https://hu-hicoder.github.io/ChemiGatya/");
+                },false);
+            }
+        }
+        
+        const el = document.getElementById("push");
+        el.addEventListener("click", gatya, false);
     
-    let group = ['H2', 'O2', 'Cl2', 'F2', 'W'];
-    
-    let a = getRandomInt(group.length);
-    function gatya() {
-        if(a==0){
-            alert("H2");
-            document.write( '<img src="H2.png" alt="" width="500" height="500">' );
-        }
-        else if(a==1){
-            alert("O2");
-            document.write( '<img src="O2.png" alt="" width="500" height="500">');
-        }
-        else if(a==2){
-            alert("Cl2");
-        }
-        else if(a==3){
-            alert("F2");
-        }
-        else{
-            alert("W");
-        }
-    }
-    const el = document.getElementById("push");
-    el.addEventListener("click", gatya, false);
     </script>
+</body>
 
-
-
-    </body>
 </html>
