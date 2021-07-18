@@ -16,7 +16,7 @@
             .addEventListener("click", function () {
             location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
-            h++
+            h++;
         }
 
         else if (a == 1) {
@@ -47,7 +47,7 @@
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
             document.getElementById("home")
             .addEventListener("click", function () {
-                location.replace("https://hu-hicoder.github.io/ChemiGatya/");
+            location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
             f++;
         }
@@ -56,17 +56,16 @@
             alert("W");
             document.write('<img src="photo\\.png" alt="" width="500" height="500">');
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
-            document.getElementById("home")
+            document.getElementById("book")
             .addEventListener("click", function () {
-                location.replace("https://hu-hicoder.github.io/ChemiGatya/");
+            location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
             w++;
         }
     }
     const el = document.getElementById("push");
     el.addEventListener("click", gatya, false);
-    let kekka=[a];
 
-//ギャラリー
+
 
 
