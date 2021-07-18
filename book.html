@@ -8,17 +8,33 @@
     <title>ChemiGacha ギャラリー</title>
     <style></style>
 </head>
+
 <body>
 
     <h1>
         集まった化学物質
     </h1>
     <button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>
-    <script>                
+    <script type="text/javascript" src="chemigatya.js">
+        if(h>0){
+            document.write('<img src="photo\\H2.png" alt="" width="500" height="500">');
+        }
+        else if(o>0){
+            document.write('<img src="photo\\O2.png" alt="" width="500" height="500">');
+        }
+        else if(cl>0){
+            document.write('<img src="photo\\.png" alt="" width="500" height="500">');
+        }
+        else if(f>0){
+            document.write('<img src="photo\\F2.png" alt="" width="500" height="500">');
+        }
+        else if(w>0){
+            document.write('<img src="photo\\.png" alt="" width="500" height="500">');
+        }
+        
         document.getElementById("home")
         .addEventListener("click", function () {
         location.replace("https://hu-hicoder.github.io/ChemiGatya/");
         }, false);
     </script>
 </body>
-    
