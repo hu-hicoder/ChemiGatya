@@ -56,7 +56,7 @@
             alert("W");
             document.write('<img src="photo\\W.png" alt="" width="500" height="500">');
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
-            document.getElementById("book")
+            document.getElementById("home")
             .addEventListener("click", function () {
             location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
