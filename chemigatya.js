@@ -1,11 +1,16 @@
-    let h=0,o=0,cl=0,f=0,w=0;
+    let h,o,cl,f,w;
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
     }
+    console.log(h);
+    console.log(o);
+    console.log(cl);
+    console.log(f);
+    console.log(w);
 
     let group = ['H2', 'O2', 'Cl2', 'F2', 'W'];
     let a = getRandomInt(group.length);
-
+    
 //ガチャを回す     
     function gatya() {
         if (a == 0) {
