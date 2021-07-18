@@ -54,7 +54,7 @@
 
         else if (a == 4) {
             alert("W");
-            document.write('<img src="photo\\.png" alt="" width="500" height="500">');
+            document.write('<img src="photo\\W.png" alt="" width="500" height="500">');
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
             document.getElementById("book")
             .addEventListener("click", function () {
