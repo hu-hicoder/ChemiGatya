@@ -6,14 +6,14 @@
     let a = getRandomInt(group.length);
     
 //ガチャを回す     
-    function gacha() {
+    function gatya() {
         if (a == 0) {
             alert("H2");
             document.write('<img src="photo\\H2.png" alt="" width="500" height="500">')
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
             document.getElementById("home")
             .addEventListener("click", function () {
-            location.replace("https://hu-hicoder.github.io/Chemigacha/");
+            location.replace("https://hu-hicoder.github.io/Chemigatya/");
             }, false);
 
         }
@@ -24,7 +24,7 @@
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
             document.getElementById("home")
             .addEventListener("click", function () {
-            location.replace("https://hu-hicoder.github.io/Chemigacha/");
+            location.replace("https://hu-hicoder.github.io/Chemigatya/");
             }, false);
         }
 
@@ -34,17 +34,17 @@
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
             document.getElementById("home")
             .addEventListener("click", function () {
-            location.replace("https://hu-hicoder.github.io/Chemigacha/");
+            location.replace("https://hu-hicoder.github.io/Chemigatya/");
             }, false);
         }
 
-        else if (a == 3) {
+        else if (a == 3){
             alert("F2");
             document.write('<img src="photo\\F2.png" alt="" width="500" height="500">');
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
             document.getElementById("home")
             .addEventListener("click", function () {
-            location.replace("https://hu-hicoder.github.io/Chemigacha/");
+            location.replace("https://hu-hicoder.github.io/Chemigatya/");
             }, false);
         }
 
@@ -54,12 +54,12 @@
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
             document.getElementById("home")
             .addEventListener("click", function () {
-            location.replace("https://hu-hicoder.github.io/Chemigacha/");
+            location.replace("https://hu-hicoder.github.io/Chemigatya/");
             }, false);
         }
     }
     const el = document.getElementById("push");
-    el.addEventListener("click", gacha, false);
+    el.addEventListener("click", gatya, false);
 
 
 
