@@ -15,32 +15,28 @@
         集まった化学物質
     </h1>
     <button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>
-    <script type="text/javascript" src="chemigatya.js"></script>
+    <script type="text/javascript" src="chemigacha.js"></script>
     <script>
-        console.log(h);
-        console.log(o);
-        console.log(cl);
-        console.log(f);
-        console.log(w);
-        if(h>0){
+
+        if(h==1){
             document.write('<img src="photo\\H2.png" alt="" width="500" height="500">');
         }
-        else if(o>0){
+        else if(o==1){
             document.write('<img src="photo\\O2.png" alt="" width="500" height="500">');
         }
-        else if(cl>0){
+        else if(cl==1){
             document.write('<img src="photo\\.png" alt="" width="500" height="500">');
         }
-        else if(f>0){
+        else if(f==1){
             document.write('<img src="photo\\F2.png" alt="" width="500" height="500">');
         }
-        else if(w>0){
+        else if(w==1){
             document.write('<img src="photo\\W.png" alt="" width="500" height="500">');
         }
         
         document.getElementById("home")
         .addEventListener("click", function () {
-        location.replace("https://hu-hicoder.github.io/ChemiGatya/");
+        location.replace("https://hu-hicoder.github.io/Chemigacha/");
         }, false);
     </script>
 </body>
