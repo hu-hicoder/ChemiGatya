@@ -13,7 +13,7 @@
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
             document.getElementById("home")
             .addEventListener("click", function () {
-            location.replace("https://hu-hicoder.github.io/Chemigatya/");
+            location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
 
         }
@@ -24,7 +24,7 @@
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
             document.getElementById("home")
             .addEventListener("click", function () {
-            location.replace("https://hu-hicoder.github.io/Chemigatya/");
+            location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
         }
 
@@ -34,7 +34,7 @@
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
             document.getElementById("home")
             .addEventListener("click", function () {
-            location.replace("https://hu-hicoder.github.io/Chemigatya/");
+            location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
         }
 
@@ -44,7 +44,7 @@
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
             document.getElementById("home")
             .addEventListener("click", function () {
-            location.replace("https://hu-hicoder.github.io/Chemigatya/");
+            location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
         }
 
@@ -54,7 +54,7 @@
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
             document.getElementById("home")
             .addEventListener("click", function () {
-            location.replace("https://hu-hicoder.github.io/Chemigatya/");
+            location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
         }
     }
