@@ -30,7 +30,7 @@
 
         else if (a == 2) {
             alert("Cl2");
-            document.write('<img src="photo\\.png" alt="" width="500" height="500" border="10">');
+            document.write('<img src="photo\\Cl2.png" alt="" width="500" height="500" border="10">');
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
             document.getElementById("home")
             .addEventListener("click", function () {
