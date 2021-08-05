@@ -5,26 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chemigatya</title>
+    <title>Chemigacha</title>
     <style>
-
-
         .turn {
             position: relative;
             display: inline-block;
             margin-top: 40%;
-            margin-left: 41.15%;
+            margin-left: 39.30%;
             height: 120px;
             width: 150px;
         }
 
-        body {
-            background-image: url(photo/home.png);
-            background-size: cover;
-            background-repeat: no-repeat;
+        .galary {
+            display: inline-block;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            color: rgba(0, 69, 212, 0.47);
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+            background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+            box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+            border-bottom: solid 3px #5e7fca;
+
         }
 
+        .galary:active {
+            -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+            border-bottom: none;
+        }
 
+        body {
+            background-image: url(photo/home.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     </style>
 </head>
 
@@ -32,6 +49,10 @@
     <div id="push" class="turn" type="button">
         <img src="photo/turn.png" class=turn alt="turn">
     </div>
+
+    <header>
+        <button id="book" class="galary">ギャラリー</button>
+    </header>
 
     <script type="text/javascript" src="chemigatya.js"></script>
     <script>
