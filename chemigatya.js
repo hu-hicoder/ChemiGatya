@@ -3,6 +3,10 @@
     }
     let H = 0;
     let O = 0;
+    let Cl= 0;
+    let F = 0;
+    let W = 0;
+    
     let group = ['H2', 'O2', 'Cl2', 'F2', 'W'];
     let a = getRandomInt(group.length);
     console.log(H);
