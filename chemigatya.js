@@ -1,15 +1,16 @@
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
     }
-    let H = 0;
-    let O = 0;
-    let Cl= 0;
-    let F = 0;
-    let W = 0;
-    
+    let H,O,F,Cl,W;
+    H=0;
+    O=0;
+    F=0;
+    Cl=0;
+    W=0;
+
     let group = ['H2', 'O2', 'Cl2', 'F2', 'W'];
     let a = getRandomInt(group.length);
-    console.log(H);
+    console.log(H,O,Cl,F,Cl);
 //ガチャを回す     
     function gatya() {
         if (a == 0) {
@@ -31,7 +32,7 @@
             .addEventListener("click", function () {
             location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
-            localStorage.setItem('O','1');
+            localStorage.setItem('O',1);
         }
 
         else if (a == 2) {
@@ -42,7 +43,7 @@
             .addEventListener("click", function () {
             location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
-            localStorage.setItem('Cl','1');
+            localStorage.setItem('Cl',1);
         }
 
         else if (a == 3){
@@ -53,7 +54,7 @@
             .addEventListener("click", function () {
             location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
-            localStorage.setItem('F','1');
+            localStorage.setItem('F',1);
         }
 
         else if (a == 4) {
@@ -64,7 +65,7 @@
             .addEventListener("click", function () {
             location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
-            localStorage.setItem('W','1');
+            localStorage.setItem('W',1);
         }
     }
     const el = document.getElementById("push");
