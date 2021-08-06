@@ -2,11 +2,11 @@
         return Math.floor(Math.random() * max);
     }
     let H,O,F,Cl,W;
-    H=no;
-    O=no;
-    F=no;
-    Cl=no;
-    W=no;
+    H="no";
+    O="no";
+    F="no";
+    Cl="no";
+    W="no";
 
     let group = ['H2', 'O2', 'Cl2', 'F2', 'W'];
     let a = getRandomInt(group.length);
