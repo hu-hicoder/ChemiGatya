@@ -1,18 +1,20 @@
     function getRandomInt(max) {
         return Math.floor(Math.random() * max);
     }
-    let H,O,F,Cl,W;
-    H="no";
-    O="no";
-    F="no";
-    Cl="no";
-    W="no";
 
     let group = ['H2', 'O2', 'Cl2', 'F2', 'W'];
     let a = getRandomInt(group.length);
-    console.log(H,O,Cl,F,Cl);
+
 //ガチャを回す     
     function gatya() {
+        
+        let H,O,F,Cl,W;
+        H="";
+        O="";
+        F="";
+        Cl="";
+        W="";
+
         if (a == 0) {
             alert("H2");
             document.write('<img src="photo\\H2.png" width="500" height="500" border="10">')
@@ -20,9 +22,9 @@
             document.getElementById("home")
             .addEventListener("click", function () {
             location.replace("https://hu-hicoder.github.io/ChemiGatya/");
-            localStorage.setItem('H','get');
-            console.log(H);
             }, false);
+            localStorage.setItem('H','1');
+            console.log(H);
         }
 
         else if (a == 1) {
@@ -33,7 +35,8 @@
             .addEventListener("click", function () {
             location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
-            localStorage.setItem('O','get');
+            localStorage.setItem('O','1');
+            console.log(O);            
         }
 
         else if (a == 2) {
@@ -44,7 +47,8 @@
             .addEventListener("click", function () {
             location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
-            localStorage.setItem('Cl','get');
+            localStorage.setItem('Cl','1');
+            console.log(Cl);
         }
 
         else if (a == 3){
@@ -55,7 +59,8 @@
             .addEventListener("click", function () {
             location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
-            localStorage.setItem('F','get');
+            localStorage.setItem('F','1');
+            console.log(F);
         }
 
         else if (a == 4) {
@@ -66,9 +71,11 @@
             .addEventListener("click", function () {
             location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
-            localStorage.setItem('W','get');
+            localStorage.setItem('W','1');
+            console.log(W);
         }
     }
+
     const el = document.getElementById("push");
     el.addEventListener("click", gatya, false);
 
