@@ -7,6 +7,9 @@
 
 //ガチャを回す     
     function gatya() {
+
+        let h,o,cl,f,w;
+        
         if (a == 0) {
             alert("H2");
             localStorage.setItem('h','have');
