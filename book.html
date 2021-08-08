@@ -33,14 +33,13 @@
         集まった化学物質
     </h1>
     <button id="home" class="home" onClick="move()">ホームに戻る</button>
-    <script type="text/javascript" src="chemigatya.js"></script>
-    <script>
+    <script type="text/javascript" src="chemigatya.js">
         localStorage.getItem(h);
         localStorage.getItem(o);
         localStorage.getItem(cl);
         localStorage.getItem(f);
         localStorage.getItem(w);
-        console.log(h,o,cl,f,w);
+        console.log(h, o, cl, f, w);
 
         if (h = have) {
             document.write('<img src="photo\\H2.png" alt="" width="500" height="500">');
@@ -57,10 +56,8 @@
         else if (w == have) {
             document.write('<img src="photo\\W.png" alt="" width="500" height="500">');
         }
-        console.log(H,O,Cl,F,W);
+        console.log(H, O, Cl, F, W);
 
-        function move() {
-        location.href = "https://hu-hicoder.github.io/ChemiGatya/home.html";
-        }
     </script>
+
 </body>
