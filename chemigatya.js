@@ -7,18 +7,10 @@
 
 //ガチャを回す     
     function gatya() {
-        
-        let h,o,f,cl,w;
-        H="";
-        O="";
-        F="";
-        Cl="";
-        W="";
-        myStorage = localStorage;
         if (a == 0) {
             alert("H2");
-            localStorage.setItem('h','1');
-            h = localStorage.getItem('mydata');
+            localStorage.setItem('h','have');
+            localStorage.getItem('h');
             console.log(h);
             document.write('<img src="photo\\H2.png" width="500" height="500" border="10">')
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
@@ -30,9 +22,9 @@
 
         else if (a == 1) {
             alert("O2");
-            localStorage.setItem('o','1');
-            o = localStorage.getItem('o');
-            console.log(o)
+            localStorage.setItem('o','have');
+            localStorage.getItem('o');
+            console.log(o);
             document.write('<img src="photo\\O2.png" alt="" width="500" height="500" border="10">');
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
             document.getElementById("home")
@@ -43,8 +35,8 @@
 
         else if (a == 2) {
             alert("Cl2");
-            localStorage.setItem('cl','1');
-            cl = localStorage.getItem('cl');
+            localStorage.setItem=('cl','have');
+            localStorage.getItem=('cl');
             console.log(cl);
             document.write('<img src="photo\\Cl2.png" alt="" width="500" height="500" border="10">');
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
@@ -56,8 +48,8 @@
 
         else if (a == 3){
             alert("F2");
-            localStorage.setItem('f','1');
-            f = localStorage.getItem('f')
+            localStorage.setItem('f','have');
+            localStorage.getItem('f');
             console.log(f);
             document.write('<img src="photo\\F2.png" alt="" width="500" height="500" border="10">');
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
@@ -69,8 +61,8 @@
 
         else if (a == 4) {
             alert("W");
-            localStorage.setItem('w','1');
-            w = localStorage.getItem(w)
+            localStorage.setItem('w','have');
+            localStorage.getItem('w');
             console.log(w);
             document.write('<img src="photo\\W.png" alt="" width="500" height="500" border="10">');
             document.write('<button id="home" class="btn btn-primary" type="submit">ホームに戻る</button>')
@@ -83,7 +75,3 @@
 
     const el = document.getElementById("push");
     el.addEventListener("click", gatya, false);
-
-
-
-

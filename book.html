@@ -35,20 +35,26 @@
     <button id="home" class="home" onClick="move()">ホームに戻る</button>
     <script type="text/javascript" src="chemigatya.js"></script>
     <script>
+        localStorage.getItem(h);
+        localStorage.getItem(o);
+        localStorage.getItem(cl);
+        localStorage.getItem(f);
+        localStorage.getItem(w);
+        console.log(h,o,cl,f,w);
 
-        if (H == get) {
+        if (h = have) {
             document.write('<img src="photo\\H2.png" alt="" width="500" height="500">');
         }
-        else if (O == get) {
+        else if (o == have) {
             document.write('<img src="photo\\O2.png" alt="" width="500" height="500">');
         }
-        else if (Cl == get) {
+        else if (cl == have) {
             document.write('<img src="photo\\Cl2.png" alt="" width="500" height="500">');
         }
-        else if (F == get) {
+        else if (f == have) {
             document.write('<img src="photo\\F2.png" alt="" width="500" height="500">');
         }
-        else if (W == get) {
+        else if (w == have) {
             document.write('<img src="photo\\W.png" alt="" width="500" height="500">');
         }
         console.log(H,O,Cl,F,W);
