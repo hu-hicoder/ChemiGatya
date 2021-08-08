@@ -24,6 +24,24 @@
             background: #668ad8;
             color: #FFF;
         }
+
+        .turn {
+            position: relative;
+            display: inline-block;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            border-left: solid 4px #668ad8;
+            border-right: solid 4px #668ad8;
+            color: #668ad8;
+            background: #e1f3ff;
+            transition: .4s;
+        }
+
+        .turn:hover {
+            background: #668ad8;
+            color: #FFF;
+        }
     </style>
 </head>
 
@@ -32,7 +50,8 @@
     <h1>
         集まった化学物質
     </h1>
-    <button id="home" class="home" onClick="move()">ホームに戻る</button>
+    <button id="home" class="home" onClick="location.href='https://hu-hicoder.github.io/ChemiGatya/home.html'">ホームに戻る</button>
+    <button id="turn" class="turn" onClick="location.href='https://hu-hicoder.github.io/ChemiGatya/'">ガチャを回す</button>
     <script type="text/javascript" src="chemigatya.js">
         localStorage.getItem(h);
         localStorage.getItem(o);
