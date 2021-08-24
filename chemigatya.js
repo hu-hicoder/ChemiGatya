@@ -72,22 +72,8 @@
             location.replace("https://hu-hicoder.github.io/ChemiGatya/");
             }, false);
         }
-        if(localStorage.getItem('h') !== null) {
-            console.log('このキーは存在しています');
-        }
-        if(localStorage.getItem('o') !== null) {
-            console.log('このキーは存在しています');
-        }
-        if(localStorage.getItem('cl') !== null) {
-            console.log('このキーは存在しています');
-        }
-        if(localStorage.getItem('f') !== null) {
-            console.log('このキーは存在しています');
-        }
-        if(localStorage.getItem('w') !== null) {
-            console.log('このキーは存在しています');
-        }
     }
-
+    
     const el = document.getElementById("push");
     el.addEventListener("click", gatya, false);
+    
