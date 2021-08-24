@@ -3,13 +3,13 @@
     }
 
     let group = ['H2', 'O2', 'Cl2', 'F2', 'W'];
-    let a = getRandomInt(group.length);
+    let result = getRandomInt(group.length);
 
 //ガチャを回す     
     function gatya() {
-
-        let h,o,cl,f,w;
         
+        let h,o,cl,f,w;
+        document.cookie = "a=result"
         if (a == 0) {
             alert("H2");
             localStorage.setItem('h','have');
