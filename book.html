@@ -60,43 +60,184 @@
             background: #668ad8;
             color: #FFF;
         }
+
+        .groupv {
+            width: 50px;
+            height: 25px;
+            vertical-align: middle;
+        }
+
+        .parentv {
+            width: 100%;
+            display: flex;
+        }
+
+        .grouph {
+            width: 25px;
+            height: 50px;
+            text-align: center;
+        }
+
+        .parenth {
+            width: 100%;
+        }
+        .img{
+            width: 50px;
+            height: 50px;
+        }
+        .noimg1{
+            width: 800px;
+            height: 50px;
+        }
     </style>
 </head>
 
 <body>
+    <p>
+        ギャラリー
+    </p>
+    <article>
+        <div class="parentv">
+            <div class="groupv"> </div>
+            <div class="groupv">
+                1
+                <img class="img" id="imgH">
+                <img class="img" id="imgLi"> 
+                <img class="img" id="imgNa">
+                <img class="img" id="imgK">
+                <img class="img" id="imgRb">   
+            </div>
+            <div class="groupv">
+                2
+                <img class="noimg" id="noimg1">
+                <img class="img" id="imgBe">
+                <img class="img" id="imgMg">
+                <img class="img" id="imgCa">
+                <img class="img" id="imgSr">
+    <!--        <img class="img" id="img2">
+                <img class="img" id="img2">
+                <img class="img" id="img2">-->
+            
+            </div>
+            <div class="groupv">
+                3
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+                <img class="img" id="imgSc">
+                <img class="img" id="imgY">
+            </div>
+            <div class="groupv">
+                4
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+            </div>
+            <div class="groupv">
+                5
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+            </div>
+            <div class="groupv">
+                6
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+            </div>
+            <div class="groupv">7
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+            
+            </div>
+            <div class="groupv">
+                8
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+            </div>
+            <div class="groupv">
+                9
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+            </div>
+            <div class="groupv">
+                10
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+            </div>
+            <div class="groupv">
+                11
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+            </div>
+            <div class="groupv">
+                12
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+                <img class="img" id="noimg">
+            </div>
+            <div class="groupv">
+                13
+                <img class="img" id="noimg">
+                <img class="img" id="imgB">
+                <img class="img" id="imgAl">
+            </div>
+            <div class="groupv">
+                14
+                <img class="img" id="noimg">
+                <img class="img" id="imgC">
+                <img class="img" id="imgSi">
+            </div>
+            <div class="groupv">
+                15
+                <img class="img" id="noimg">
+                <img class="img" id="imgN">
+                <img class="img" id="imgP">
+            </div>
+            <div class="groupv">
+                16
+                <img class="img" id="noimg">
+                <img class="img" id="imgO">
+                <img class="img" id="imgS">
+            </div>
+            <div class="groupv">
+                17
+                <img class="img" id="noimg">
+                <img class="img" id="imgF">
+                <img class="img" id="imgCl">
+            </div>
+            <div class="groupv">
+                18
+                <img class="img" id="imgHe">
+                <img class="img" id="imgNe">
+                <img class="img" id="imgAr">
+            </div>
+        </div>
 
-    <h1>
-        集まった化学物質
-    </h1>
+        <div class="parenth">
+            <div class="grouph">
+                1              
+            </div>
+            <div class="grouph">
+                2
+
+            </div>
+            <div class="grouph">
+                3
+                <img class="img" id="noimg">
+            </div>
+            <div class="grouph">4</div>
+            <div class="grouph">5</div>
+        </div>
+    </article>
     <button id="home" class="home"
         onClick="location.href='https://hu-hicoder.github.io/ChemiGatya/home.html'">ホームに戻る</button>
     <button id="turn" class="turn" onClick="location.href='https://hu-hicoder.github.io/ChemiGatya/'">ガチャを回す</button>
 
-    <script>
-
-        let H = localStorage.getItem('h');
-        let O = localStorage.getItem('o');
-        let Cl = localStorage.getItem('cl');
-        let F = localStorage.getItem('f');
-        let W = localStorage.getItem('w');
-
-        if (H === 'true') {
-            document.write('<img src="photo\\H2.png" alt="" width="100" height="100">');
-        }
-        
-        if (O === 'true') {
-            document.write('<img src="photo\\O2.png" alt="" width="100" height="100">');
-        }
-        if (Cl === 'true') {
-            document.write('<img src="photo\\Cl2.png" alt="" width="100" height="100">');
-        }
-        if (F === 'true') {
-            document.write('<img src="photo\\F2.png" alt="" width="100" height="100">');
-        }
-        if (W === 'true') {
-            document.write('<img src="photo\\W.png" alt="" width="100" height="100">');
-        }
-
-    </script>
 
 </body>
