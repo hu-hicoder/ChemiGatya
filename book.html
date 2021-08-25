@@ -238,6 +238,67 @@
     <button id="home" class="home"
         onClick="location.href='https://hu-hicoder.github.io/ChemiGatya/home.html'">ホームに戻る</button>
     <button id="turn" class="turn" onClick="location.href='https://hu-hicoder.github.io/ChemiGatya/'">ガチャを回す</button>
+<script>
+    let H = localStorage.getItem('h');
+    let O = localStorage.getItem('o');
+    let Cl = localStorage.getItem('cl');
+    let F = localStorage.getItem('f');
+    let W = localStorage.getItem('w');
+    let He = localStorage.getItem('he')
+    
+    let noimg = document.getElementById("noimg");
+    noimg.src = "photo/Unknown.png";
 
+        if (H === 'true') {
+            let imgH = document.getElementById("imgH");
+            imgH.src = "photo/H2.png";
+        }
+        else{
+            let imgH = document.getElementById("imgH");
+            imgH.src = "photo/noimage.png";
+        }
+        if (He === 'true') {
+            let imgHe = document.getElementById("imgHe");
+            imgHe.src = "photo/He.png";
+        }
+        else{
+            let imgHe = document.getElementById("imgHe");
+            imgHe.src = "photo/noimage.png";
+        }
+        if (O === 'true') {
+            let imgO = document.getElementById("imgO");
+            imgO.src = "photo/O2.png";
+        }
+        else{
+            let imgO = document.getElementById("imgO");
+            imgO.src = "photo/noimage.png";
+        }
+        if (Cl === 'true') {
+            let imgCl = document.getElementById("imgCl");
+            imgCl.src = "photo/Cl2.png";
+        }
+        else{
+            let imgCl = document.getElementById("imgCl");
+            imgCl.src = "photo/noimage.png";
+        }
+        if (F === 'true') {
+            let imgF = document.getElementById("imgF");
+            imgF.src = "photo/F2.png";
+        }
+        else{
+            let imgF = document.getElementById("imgF");
+            imgF.src = "photo/noimage.png";
+        }
+        if (W === 'true') {
+            let imgW = document.getElementById("imgW");
+            imgW.src = "photo/W.png";
+        }
+        else{
+            let imgW = document.getElementById("imgW");
+            imgW.src = "photo/noimage.png";
+        }
+    
+
+</script>
 
 </body>
