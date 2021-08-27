@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<style>
-    body{
-        background-color: lightyellow;
-    }
-    .header {
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+
+        .header {
             background-color: lightgreen;
             border-bottom-color: rgb(119, 119, 119);
             border-bottom-style: solid;
@@ -26,17 +28,37 @@
             padding-right: 0px;
             padding-top: 0px;
         }
-    a{
-        font-size: 30px;
-        padding-bottom: 10px;
-    }
-    .photo{
-        width: 500px;
-        height: 500px;
-        border: 10px;
-        border-color: #dab300;
-    }
-</style>
+
+        a {
+            font-size: 30px;
+            padding-bottom: 10px;
+        }
+
+        .photo {
+            width: 500px;
+            height: 500px;
+            border: 10px;
+            border-color: #dab300;
+        }
+
+        .turn {
+            position: relative;
+            display: inline-block;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            border-left: solid 4px greenyellow;
+            border-right: solid 4px greenyellow;
+            color: black;
+            background: lightgreen;
+            transition: .4s;
+        }
+
+        .turn:hover {
+            background: greenyellow;
+            color: #FFF;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,44 +66,44 @@
         <div class="header">
             <img src="photo/logo.png" width="40px" height="40px">
             <a>ガチャの結果</a>
-            
+
         </div>
         <div>
             <img id="resultimg" class="photo">
         </div>
 
-    <button id="top">ガチャTOP</button>
-    <button id="book">ギャラリー</button>
+        <button id="top" class="turn">ガチャTOP</button>
+        <button id="book" class="turn">ギャラリー</button>
 
     </div>
-    
+
     <script>
         let result = localStorage.getItem('result');
-        if(result === 'h'){
+        if (result === 'h') {
             let resultimg = document.getElementById("resultimg")
             resultimg.src = "photo/H2.png"
         }
-        else if(result === 'o'){
+        else if (result === 'o') {
             let resultimg = document.getElementById("resultimg")
             resultimg.src = "photo/O2.png"
         }
-        else if(result === 'cl'){
+        else if (result === 'cl') {
             let resultimg = document.getElementById("resultimg")
             resultimg.src = "photo/Cl2.png"
         }
-        else if(result === 'f'){
+        else if (result === 'f') {
             let resultimg = document.getElementById("resultimg")
             resultimg.src = "photo/F2.png"
         }
-        else if(result === 'w'){
+        else if (result === 'w') {
             let resultimg = document.getElementById("resultimg")
             resultimg.src = "photo/W.png"
         }
-        else if(result === 'he'){
+        else if (result === 'he') {
             let resultimg = document.getElementById("resultimg")
             resultimg.src = "photo/He.png"
         }
-            
+
         document.getElementById("top")
             .addEventListener("click", function () {
                 location.replace("https://hu-hicoder.github.io/ChemiGatya/");
@@ -91,8 +113,7 @@
             .addEventListener("click", function () {
                 location.replace("https://hu-hicoder.github.io/ChemiGatya/book");
             }, false);
-        
-        
     </script>
 </body>
+
 </html>
