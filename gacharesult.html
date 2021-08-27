@@ -49,6 +49,10 @@
         <div>
             <img id="resultimg" class="photo">
         </div>
+
+    <button id="top">ガチャTOP</button>
+    <button id="book">ギャラリー</button>
+
     </div>
     
     <script>
@@ -77,8 +81,18 @@
             let resultimg = document.getElementById("resultimg")
             resultimg.src = "photo/He.png"
         }
+            
+        document.getElementById("top")
+            .addEventListener("click", function () {
+                location.replace("https://hu-hicoder.github.io/ChemiGatya/");
+            }, false);
+
+        document.getElementById("book")
+            .addEventListener("click", function () {
+                location.replace("https://hu-hicoder.github.io/ChemiGatya/book");
+            }, false);
+        
         
     </script>
-
 </body>
 </html>
