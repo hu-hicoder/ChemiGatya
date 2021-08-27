@@ -7,42 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chemigacha</title>
     <style>
-        .logo{
+        .container {
+            margin: 0;
+        }
+
+        .logo {
             width: 100px;
             height: 100px;
         }
 
-        .homelogo{
+        .homelogo {
             width: 100px;
             height: 30px;
             margin-top: 10px;
         }
 
-        .header{
-            width: 100%;
-            height: 50px;
-            background-color: aquamarine;
+        .header {
+            background-color: lightgreen;
+            border-bottom-color: rgb(119, 119, 119);
+            border-bottom-style: solid;
+            border-bottom-width: 4px;
+            display: block;
+            height: 40px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            min-width: 1000px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+        }
+        body{
+            background-color: lightyellow;
         }
 
+        .content {
+            margin: 0 auto;
+            padding: 0;
+            width: 950px;
+            background-color: #FFF;
+            display: flex;
+            line-height: 1.7em;
+        }
+        
     </style>
 </head>
-<header>
-    <div class="header">
-        <img src="photo/ChemicaRoom.png" class="homelogo">
-    </div>
-    
-</header>
+
+
+
+
 <body>
-    <div>
-        <img src="photo/logo.png" class="logo" onclick="goClick()" width="150" height="217" alt="サンプルボタン">
-        <p>Chemigatya</p>
+    <div id="container">
+        <div class="header">
+            <img src="photo/ChemicaRoom.png" class="homelogo">
+        </div>
+        <div>
+            <img src="photo/logo.png" class="logo" onclick="goClick()" width="150" height="217" alt="サンプルボタン">
+            <p>Chemigatya</p>
+        </div>
     </div>
-    
+    <div class="content">
+        <div></div>
+    </div>
     <script type="text/javascript" src="chemigatya.js"></script>
     <script>
         function goClick() {
-        location.href = "https://hu-hicoder.github.io/ChemiGatya/";
+            location.href = "https://hu-hicoder.github.io/ChemiGatya/";
         }
 
-    </script>  
+    </script>
 </body>

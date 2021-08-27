@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-color: lightyellow;
+    }
+    .header {
+            background-color: lightgreen;
+            border-bottom-color: rgb(119, 119, 119);
+            border-bottom-style: solid;
+            border-bottom-width: 4px;
+            display: block;
+            height: 40px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-top: 0px;
+            min-width: 1000px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 0px;
+        }
+    a{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .photo{
+        width: 500px;
+        height: 500px;
+        border: 10px;
+        border-color: #dab300;
+    }
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="photo/logo.png" width="40px" height="40px">
+            <a>ガチャの結果</a>
+            
+        </div>
+        <div>
+            <img id="result" class="photo">
+        </div>
+    </div>
+    
+    <script>
+        localStorage.getItem('result');
+        if(result === 'h'){
+            imgresult = document.getElementById("result")
+            imgresult.src = "photo/H2.png"
+        }
+        else if(result === 'o'){
+            imgresult = document.getElementById("result")
+            imgresult.src = "photo/O2.png"
+        }
+        else if(result === 'cl'){
+            imgresult = document.getElementById("result")
+            imgresult.src = "photo/Cl2.png"
+        }
+        else if(result === 'f'){
+            imgresult = document.getElementById("result")
+            imgresult.src = "photo/F2.png"
+        }
+        else if(result === 'w'){
+            imgresult = document.getElementById("result")
+            imgresult.src = "photo/W.png"
+        }
+        else if(result === 'he'){
+            imgresult = document.getElementById("result")
+            imgresult.src = "photo/He.png"
+        }
+        
+    </script>
+
+</body>
+</html>
