@@ -47,35 +47,35 @@
             
         </div>
         <div>
-            <img id="result" class="photo">
+            <img id="resultimg" class="photo">
         </div>
     </div>
     
     <script>
-        localStorage.getItem('result');
+        let result = localStorage.getItem('result');
         if(result === 'h'){
-            let result = document.getElementById("result")
-            result.src = "photo/H2.png"
+            let resultimg = document.getElementById("resultimg")
+            resultimg.src = "photo/H2.png"
         }
         else if(result === 'o'){
-            let result = document.getElementById("result")
-            result.src = "photo/O2.png"
+            let resultimg = document.getElementById("resultimg")
+            resultimg.src = "photo/O2.png"
         }
         else if(result === 'cl'){
-            let result = document.getElementById("result")
-            result.src = "photo/Cl2.png"
+            let resultimg = document.getElementById("resultimg")
+            resultimg.src = "photo/Cl2.png"
         }
         else if(result === 'f'){
-            let result = document.getElementById("result")
-            result.src = "photo/F2.png"
+            let resultimg = document.getElementById("resultimg")
+            resultimg.src = "photo/F2.png"
         }
         else if(result === 'w'){
-            let result = document.getElementById("result")
-            result.src = "photo/W.png"
+            let resultimg = document.getElementById("resultimg")
+            resultimg.src = "photo/W.png"
         }
         else if(result === 'he'){
-            let result = document.getElementById("result")
-            result.src = "photo/He.png"
+            let resultimg = document.getElementById("resultimg")
+            resultimg.src = "photo/He.png"
         }
         
     </script>
