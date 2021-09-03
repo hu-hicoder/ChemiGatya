@@ -345,145 +345,145 @@ let W = localStorage.getItem('w');
 
     let imgRb = document.getElementById("imgRb");
     if(Rb === 'true'){
-        imgRb = "photo/Rb.png"
+        imgRb.src = "photo/Rb.png"
     }
     else{
-        imgRb = "element/Rb.JPG"
+        imgRb.src = "element/Rb.JPG"
     }
 
     let imgSr = document.getElementById("imgSr");
     if(Sr === 'true'){
-        imgSr = "photo/Sr.png"
+        imgSr.src = "photo/Sr.png"
     }
     else{
-        imgSr = "element/Sr.JPG"
+        imgSr.src = "element/Sr.JPG"
     }
 
     let imgY = document.getElementById("imgY");
     if(Y === 'true'){
-        imgY = "photo/Y.png"
+        imgY.src = "photo/Y.png"
     }
     else{
-        imgY = "element/Y.JPG"
+        imgY.src = "element/Y.JPG"
     }
 
     let imgZr = document.getElementById("imgZr");
     if(Zr === 'true'){
-        imgZr = "photo/Zr.png"
+        imgZr.src = "photo/Zr.png"
     }
     else{
-        imgZr = "element/Zr.JPG"
+        imgZr.src = "element/Zr.JPG"
     }
 
     let imgNb = document.getElementById("imgNb");
     if(Nb === 'true'){
-        imgNb = "photo/Nb.png"
+        imgNb.src = "photo/Nb.png"
     }
     else{
-        imgNb = "element/Nb.JPG"
+        imgNb.src = "element/Nb.JPG"
     }
 
     let imgMo = document.getElementById("imgMo");
     if(Mo === 'true'){
-        imgMo = "photo/Mo.png"
+        imgMo.src = "photo/Mo.png"
     }
     else{
-        imgMo = "element/Mo.JPG"
+        imgMo.src = "element/Mo.JPG"
     }
 
     let imgTc = document.getElementById("imgTc");
     if(Tc === 'true'){
-        imgTc = "photo/Tc.png"
+        imgTc.src = "photo/Tc.png"
     }
     else{
-        imgTc = "element/Tc.JPG"
+        imgTc.src = "element/Tc.JPG"
     }
     let imgRu = document.getElementById("imgRu");
     if(Ru === 'true'){
-        imgRu = "photo/Ru.png"
+        imgRu.src = "photo/Ru.png"
     }
     else{
-        imgRu = "element/Ru.JPG"
+        imgRu.src = "element/Ru.JPG"
     }
 
     let imgRh = document.getElementById("imgRh");
     if(Rh === 'true'){
-        imgRh = "photo/Rh.png"
+        imgRh.src = "photo/Rh.png"
     }
     else{
-        imgRh = "element/Rh.JPG"
+        imgRh.src = "element/Rh.JPG"
     }
 
     let imgPd = document.getElementById("imgPd");
     if(Pd === 'true'){
-        imgPd = "photo/Pd.png"
+        imgPd.src = "photo/Pd.png"
     }
     else{
-        imgPd = "element/Pd.JPG"
+        imgPd.src = "element/Pd.JPG"
     }
 
     let imgAg = document.getElementById("imgAg");
     if(Ag === 'true'){
-        imgAg = "photo/Ag.png"
+        imgAg.src = "photo/Ag.png"
     }
     else{
-        imgAg = "element/Ag.JPG"
+        imgAg.src = "element/Ag.JPG"
     }
 
     let imgCd = document.getElementById("imgCd");
     if(Cd === 'true'){
-        imgCd = "photo/Cd.png"
+        imgCd.src = "photo/Cd.png"
     }
     else{
-        imgCd = "element/Cd.JPG"
+        imgCd.src = "element/Cd.JPG"
     }
     
     let imgIn = document.getElementById("imgIn");
     if(In === 'true'){
-        imgIn = "photo/In.png"
+        imgIn.src = "photo/In.png"
     }
     else{
-        imgIn = "element/In.JPG"
+        imgIn.src = "element/In.JPG"
     }
 
     let imgSn = document.getElementById("imgSn");
     if(Sn === 'true'){
-        imgSn = "photo/Sn.png"
+        imgSn.src = "photo/Sn.png"
     }
     else{
-        imgSn = "element/Sn.JPG"
+        imgSn.src = "element/Sn.JPG"
     }
 
     let imgSb = document.getElementById("imgSb");
     if(Sb === 'true'){
-        imgSb = "photo/Sb.png"
+        imgSb.src = "photo/Sb.png"
     }
     else{
-        imgSb = "element/Sb.JPG"
+        imgSb.src = "element/Sb.JPG"
     }
 
     let imgTe = document.getElementById("imgTe");
     if(Te === 'true'){
-        imgTe = "photo/Te.png"
+        imgTe.src= "photo/Te.png"
     }
     else{
-        imgTe = "element/.JPG"
+        imgTe.src = "element/Te.JPG"
     }
 
     let imgI = document.getElementById("imgI");
     if(I === 'true'){
-        imgI = "photo/I.png"
+        imgI.src = "photo/I.png"
     }
     else{
-        imgI = "element/I.JPG"
+        imgI.src = "element/I.JPG"
     }
 
     let imgXe = document.getElementById("imgXe");
     if(Xe === 'true'){
-        imgXe = "photo/Xe.png"
+        imgXe.src = "photo/Xe.png"
     }
     else{
-        imgXe = "element/Xe.JPG"
+        imgXe.src = "element/Xe.JPG"
     }
 
     let imgW = document.getElementById("imgW");
