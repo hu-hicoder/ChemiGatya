@@ -34,6 +34,24 @@ let As = localStorage.getItem('as');
 let Se = localStorage.getItem('se');
 let Br = localStorage.getItem('br');
 let Kr = localStorage.getItem('kr');
+let Rb = localStorage.getItem('rb');
+let Sr = localStorage.getItem('sr');
+let Y = localStorage.getItem('y');
+let Zr = localStorage.getItem('zr');
+let Nb = localStorage.getItem('nb');
+let Mo = localStorage.getItem('mo');
+let Tc = localStorage.getItem('tc');
+let Ru = localStorage.getItem('ru');
+let Rh = localStorage.getItem('rh');
+let Pd = localStorage.getItem('pd');
+let Ag = localStorage.getItem('ag');
+let Cd = localStorage.getItem('cd');
+let In = localStorage.getItem('in');
+let Sn = localStorage.getItem('sn');
+let Sb = localStorage.getItem('sb');
+let Te = localStorage.getItem('te');
+let I = localStorage.getItem('i');
+let Xe = localStorage.getItem('xe');
 let W = localStorage.getItem('w');
 
     //ギャラリーでの画像判定
@@ -323,6 +341,149 @@ let W = localStorage.getItem('w');
     }
     else{
         imgKr.src = "element/Kr.JPG";
+    }
+
+    let imgRb = document.getElementById("imgRb");
+    if(Rb === 'true'){
+        imgRb = "photo/Rb.png"
+    }
+    else{
+        imgRb = "element/Rb.JPG"
+    }
+
+    let imgSr = document.getElementById("imgSr");
+    if(Sr === 'true'){
+        imgSr = "photo/Sr.png"
+    }
+    else{
+        imgSr = "element/Sr.JPG"
+    }
+
+    let imgY = document.getElementById("imgY");
+    if(Y === 'true'){
+        imgY = "photo/Y.png"
+    }
+    else{
+        imgY = "element/Y.JPG"
+    }
+
+    let imgZr = document.getElementById("imgZr");
+    if(Zr === 'true'){
+        imgZr = "photo/Zr.png"
+    }
+    else{
+        imgZr = "element/Zr.JPG"
+    }
+
+    let imgNb = document.getElementById("imgNb");
+    if(Nb === 'true'){
+        imgNb = "photo/Nb.png"
+    }
+    else{
+        imgNb = "element/Nb.JPG"
+    }
+
+    let imgMo = document.getElementById("imgMo");
+    if(Mo === 'true'){
+        imgMo = "photo/Mo.png"
+    }
+    else{
+        imgMo = "element/Mo.JPG"
+    }
+
+    let imgTc = document.getElementById("imgTc");
+    if(Tc === 'true'){
+        imgTc = "photo/Tc.png"
+    }
+    else{
+        imgTc = "element/Tc.JPG"
+    }
+    let imgRu = document.getElementById("imgRu");
+    if(Ru === 'true'){
+        imgRu = "photo/Ru.png"
+    }
+    else{
+        imgRu = "element/Ru.JPG"
+    }
+
+    let imgRh = document.getElementById("imgRh");
+    if(Rh === 'true'){
+        imgRh = "photo/Rh.png"
+    }
+    else{
+        imgRh = "element/Rh.JPG"
+    }
+
+    let imgPd = document.getElementById("imgPd");
+    if(Pd === 'true'){
+        imgPd = "photo/Pd.png"
+    }
+    else{
+        imgPd = "element/Pd.JPG"
+    }
+
+    let imgAg = document.getElementById("imgAg");
+    if(Ag === 'true'){
+        imgAg = "photo/Ag.png"
+    }
+    else{
+        imgAg = "element/Ag.JPG"
+    }
+
+    let imgCd = document.getElementById("imgCd");
+    if(Cd === 'true'){
+        imgCd = "photo/Cd.png"
+    }
+    else{
+        imgCd = "element/Cd.JPG"
+    }
+    
+    let imgIn = document.getElementById("imgIn");
+    if(In === 'true'){
+        imgIn = "photo/In.png"
+    }
+    else{
+        imgIn = "element/In.JPG"
+    }
+
+    let imgSn = document.getElementById("imgSn");
+    if(Sn === 'true'){
+        imgSn = "photo/Sn.png"
+    }
+    else{
+        imgSn = "element/Sn.JPG"
+    }
+
+    let imgSb = document.getElementById("imgSb");
+    if(Sb === 'true'){
+        imgSb = "photo/Sb.png"
+    }
+    else{
+        imgSb = "element/Sb.JPG"
+    }
+
+    let imgTe = document.getElementById("imgTe");
+    if(Te === 'true'){
+        imgTe = "photo/Te.png"
+    }
+    else{
+        imgTe = "element/.JPG"
+    }
+
+    let imgI = document.getElementById("imgI");
+    if(I === 'true'){
+        imgI = "photo/I.png"
+    }
+    else{
+        imgI = "element/I.JPG"
+    }
+
+    let imgXe = document.getElementById("imgXe");
+    if(Xe === 'true'){
+        imgXe = "photo/Xe.png"
+    }
+    else{
+        imgXe = "element/Xe.JPG"
     }
 
     let imgW = document.getElementById("imgW");

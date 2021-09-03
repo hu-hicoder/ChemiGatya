@@ -288,11 +288,158 @@ function pickkr(){
         img.src = "element/Kr.JPG";
     }
 }
+function pickrb(){
+    if (Rb === 'true') {
+        img.src = "photo/Rb.png";
+    }
+    else {
+        img.src = "element/Rb.JPG";
+    }
+}
+function picksr(){
+    if (Sr === 'true') {
+        img.src = "photo/Sr.png";
+    }
+    else {
+        img.src = "element/Sr.JPG";
+    }
+}
+function picky(){
+    if (Y === 'true') {
+        img.src = "photo/Y.png";
+    }
+    else {
+        img.src = "element/Y.JPG";
+    }
+}
+function pickzr(){
+    if (Zr === 'true') {
+        img.src = "photo/Zr.png";
+    }
+    else {
+        img.src = "element/Zr.JPG";
+    }
+}
+function picknb(){
+    if (Nb === 'true') {
+        img.src = "photo/Nb.png";
+    }
+    else {
+        img.src = "element/Nb.JPG";
+    }
+}
+function pickmo(){
+    if (Mo === 'true') {
+        img.src = "photo/Mo.png";
+    }
+    else {
+        img.src = "element/Mo.JPG";
+    }
+}
+function picktc(){
+    if (Tc === 'true') {
+        img.src = "photo/Tc.png";
+    }
+    else {
+        img.src = "element/Tc.JPG";
+    }
+}
+function picru(){
+    if (Ru === 'true') {
+        img.src = "photo/Ru.png";
+    }
+    else {
+        img.src = "element/Ru.JPG";
+    }
+}
+function pickrh(){
+    if (Rh === 'true') {
+        img.src = "photo/Rh.png";
+    }
+    else {
+        img.src = "element/Rh.JPG";
+    }
+}
+function pickpd(){
+    if (Pd === 'true') {
+        img.src = "photo/Pd.png";
+    }
+    else {
+        img.src = "element/Pd.JPG";
+    }
+}
+function pickag(){
+    if (Ag === 'true') {
+        img.src = "photo/Ag.png";
+    }
+    else {
+        img.src = "element/Ag.JPG";
+    }
+}
+function pickcd(){
+    if (Cd === 'true') {
+        img.src = "photo/Cd.png";
+    }
+    else {
+        img.src = "element/Cd.JPG";
+    }
+}
+function pickin(){
+    if (In === 'true') {
+        img.src = "photo/In.png";
+    }
+    else {
+        img.src = "element/In.JPG";
+    }
+}
+function picksn(){
+    if (Sn === 'true') {
+        img.src = "photo/Sn.png";
+    }
+    else {
+        img.src = "element/Sn.JPG";
+    }
+}
+function picksb(){
+    if (Sb === 'true') {
+        img.src = "photo/Sb.png";
+    }
+    else {
+        img.src = "element/Sb.JPG";
+    }
+}
+function pickte(){
+    if (Te === 'true') {
+        img.src = "photo/Te.png";
+    }
+    else {
+        img.src = "element/Te.JPG";
+    }
+}
+function picki(){
+    if (I === 'true') {
+        img.src = "photo/I.png";
+    }
+    else {
+        img.src = "element/I.JPG";
+    }
+}
+
+function pickxe(){
+    if (Xe === 'true') {
+        img.src = "photo/Xe.png";
+    }
+    else {
+        img.src = "element/Xe.JPG";
+    }
+}
+
+
 function pickw(){
     if (W === 'true') {
         img.src = "photo/W.png";
     }
     else {
-        img.src = "element/margin.PNG";
+        img.src = "element/W.JPG";
     }
 }
