@@ -7,38 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            background-color: lightyellow;
-        }
-
-        .header {
-            background-color: lightgreen;
-            border-bottom-color: rgb(119, 119, 119);
-            border-bottom-style: solid;
-            border-bottom-width: 4px;
-            display: block;
-            height: 40px;
-            margin-bottom: 0px;
-            margin-left: 0px;
-            margin-right: 0px;
-            margin-top: 0px;
-            min-width: 1000px;
-            padding-bottom: 0px;
-            padding-left: 0px;
-            padding-right: 0px;
-            padding-top: 0px;
-        }
-
-        a {
-            font-size: 30px;
-            padding-bottom: 10px;
+        p {
+            text-align: center;
         }
 
         .photo {
             width: 500px;
             height: 500px;
+            padding-top: 50px;
             border: 10px;
             border-color: #dab300;
+        }
+
+        .container{
+            text-align: center;
         }
 
         .turn {
@@ -53,57 +35,68 @@
             background: lightgreen;
             transition: .4s;
         }
-
         .turn:hover {
             background: greenyellow;
             color: #FFF;
         }
+        body{
+            background-color: lightgoldenrodyellow;
+        }
+
+
+
     </style>
+    <link rel="stylesheet" href="galary/layout.css">
 </head>
 
-<body>
-    <div class="container">
-        <div class="header">
-            <img src="photo/logo.png" width="40px" height="40px">
-            <a>ガチャの結果</a>
+<body class="HolyGrail">
+    <header>
+        <p>ガチャの結果</p>
+    </header>
 
-        </div>
-        <div>
+    <div class="HolyGrail-body">
+      <main class="HolyGrail-content">
+        <div class="container">
             <img id="resultimg" class="photo">
         </div>
-
-        <button id="top" class="turn">ガチャTOP</button>
-        <button id="book" class="turn">ギャラリー</button>
-
+      </main>
+      <nav class="HolyGrail-nav">…</nav>
+      <aside class="HolyGrail-ads">元素の情報</aside>
     </div>
+    <footer>
+        <div class="container">
+            <button id="top" class="turn">ガチャTOP</button>
+            <button id="book" class="turn">ギャラリー</button>
+        </div>
+    </footer>
+</body>
 
+    
     <script>
+
+        //ガチャの結果表示
         let result = localStorage.getItem('result');
         if (result === 'h') {
-            let resultimg = document.getElementById("resultimg")
             resultimg.src = "photo/H2.png"
         }
         else if (result === 'o') {
-            let resultimg = document.getElementById("resultimg")
             resultimg.src = "photo/O2.png"
         }
         else if (result === 'cl') {
-            let resultimg = document.getElementById("resultimg")
             resultimg.src = "photo/Cl2.png"
         }
         else if (result === 'f') {
-            let resultimg = document.getElementById("resultimg")
             resultimg.src = "photo/F2.png"
         }
         else if (result === 'w') {
-            let resultimg = document.getElementById("resultimg")
             resultimg.src = "photo/W.png"
         }
         else if (result === 'he') {
-            let resultimg = document.getElementById("resultimg")
             resultimg.src = "photo/He.png"
         }
 
+
+        //画面遷移
         document.getElementById("top")
             .addEventListener("click", function () {
                 location.replace("https://hu-hicoder.github.io/ChemiGatya/");

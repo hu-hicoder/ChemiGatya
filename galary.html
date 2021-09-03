@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ギャラリー</title>
+    <style>
+        /*　ボタン　*/
+        .turn {
+            position: relative;
+            display: inline-block;
+            font-weight: bold;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            border-left: solid 4px greenyellow;
+            border-right: solid 4px greenyellow;
+            color: black;
+            background: lightgreen;
+            transition: .4s;
+        }
+
+        .turn:hover {
+            background: greenyellow;
+            color: #FFF;
+        }
+
+        .img{
+            height: 150px;
+            width: 150px;
+        }
+        
+        /* 周期表 */
+        .table {
+            width: 540px;
+            height: 360px;
+            border-top-width: 0px;
+            border-right-width: 0px;
+            border-bottom-width: 0px;
+            border-left-width: 0px;
+            border-collapse: collapse ;
+            border-spacing: 0px 0px;
+        }
+
+        .number{
+            width: 60px;
+            height: 20px;
+        }
+
+        .numberH{
+            height: 60px;
+            width: 20px;
+        }
+        .element{
+            height: 60px;
+            width: 60px;
+        }
+        .margin{
+            height: 60px;
+            width: 60px;  
+        }
+    </style>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="galary.css">  
+</head>
+<body>
+    <header>
+        <p>
+            ギャラリー
+        </p>
+    </header>
+    <div class="HolyGrail-body">
+        <main class="HolyGrail-content">
+            <table class="table">
+                <tbody>
+                    <!--番号-->
+                    <tr>
+                        <th class="number"> </th>
+                        <th class="number">1</th>
+                        <th class="number">2</th>
+                        <th class="number">3</th>
+                        <th class="number">4</th>
+                        <th class="number">5</th>
+                        <th class="number">6</th>
+                        <th class="number">7</th>
+                        <th class="number">8</th>
+                        <th class="number">9</th>
+                        <th class="number">10</th>
+                        <th class="number">11</th>
+                        <th class="number">12</th>
+                        <th class="number">13</th>
+                        <th class="number">14</th>
+                        <th class="number">15</th>
+                        <th class="number">16</th>
+                        <th class="number">17</th>
+                        <th class="number">18</th>
+                    </tr>
+                    <!--第１周期-->
+                    <tr>
+                        <td class="numberH">1</td>
+                        <td class="molecule">
+                            <img id="imgH" class="element" onmouseover="pickh()">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td class="molecule1">
+                            <img id="imgHe" class="element" onmouseover="pickhe();">
+                        </td>
+                    </tr>
+                    <!--第２周期-->
+                    <tr>
+                        <td class="numberH">2</td>
+                        <td class="molecule">
+                            <img id="imgLi" class="element" onmouseover="pickli();">
+                        </td>
+                        <td class="molecule">
+                            <img id="imgBe" class="element" onmouseover="pickbe();">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+
+                        <td class="molecule">
+                            <img id="imgB" class="element" onmouseover="pickb();">
+                        </td>
+                        <td>
+                            <img id="imgC" class="element" onmouseover="pickc();">
+                        </td>
+                        <td>
+                            <img id="imgN" class="element" onmouseover="pickn();">
+                        </td>
+                        <td>
+                            <img id="imgO" class="element" onmouseover="picko();">
+                        </td>
+                        <td>
+                            <img id="imgF" class="element" onmouseover="pickf();">
+                        </td>
+                        <td>
+                            <img id="imgNe" class="element" onmouseover="pickne();">
+                        </td>
+                    </tr>
+                    <!--第３周期-->
+                    <tr>
+                        <td class="numberH">3</td>
+                        <td>
+                            <img id="imgNa" class="element" onmouseover="pickna();">
+                        </td>
+                        <td>
+                            <img id="imgMg" class="element" onmouseover="pickmg();">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img src="element/margin.PNG" class="margin">
+                        </td>
+                        <td>
+                            <img id="imgAl" class="element" onmouseover="pickal();">
+                        </td>
+                        <td>
+                            <img id="imgSi" class="element" onmouseover="picksi();">
+                        </td>
+                        <td>
+                            <img id="imgP" class="element" onmouseover="pickp();">
+                        </td>
+                        <td>
+                            <img id="imgS" class="element" onmouseover="picks();">
+                        </td>
+                        <td>
+                            <img id="imgCl" class="element" onmouseover="pickcl();">
+                        </td>
+                        <td>
+                            <img id="imgAr" class="element" onmouseover="pickar();">
+                        </td>
+                    </tr>
+                    <!--第４周期-->
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <img id="imgK" class="element" onmouseover="pickk();">
+                        </td>
+                        <td>
+                            <img id="imgCa" class="element" onmouseover="pickca();">
+                        </td>
+                        <td>
+                            <img id="imgSc" class="element" onmouseover="picksc();">
+                        </td>
+                        <td>
+                            <img id="imgTi" class="element" onmouseover="pickti();">
+                        </td>
+                        <td>
+                            <img id="imgV" class="element" onmouseover="pickv();">
+                        </td>
+                        <td>
+                            <img id="imgCr" class="element" onmouseover="pickcr();">
+                        </td>
+                        <td>
+                            <img id="imgMn" class="element" onmouseover="pickmn();">
+                        </td>
+                        <td>
+                            <img id="imgFe" class="element" onmouseover="pickfe();">
+                        </td>
+                        <td>
+                            <img id="imgCo" class="element" onmouseover="pickco();">
+                        </td>
+                        <td>
+                            <img id="imgNi" class="element" onmouseover="pickni();">
+                        </td>
+                        <td>
+                            <img id="imgCu" class="element" onmouseover="pickcu();">
+                        </td>
+                        <td>
+                            <img id="imgZn" class="element" onmouseover="pickzn();">
+                        </td>
+                        <td>
+                            <img id="imgGa" class="element" onmouseover="pickga();">
+                        </td>
+                        <td>
+                            <img id="imgGe" class="element" onmouseover="pickge();">
+                        </td>
+                        <td>
+                            <img id="imgAs" class="element" onmouseover="pickas();">
+                        </td>
+                        <td>
+                            <img id="imgSe" class="element" onmouseover="pickse();">
+                        </td>
+                        <td>
+                            <img id="imgBr" class="element" onmouseover="pickbr();">
+                        </td>
+                        <td>
+                            <img id="imgKr" class="element" onmouseover="pickkr();">
+                        </td>
+                    </tr>
+                    <!--第５周期-->
+                    <tr>
+                        <td class="numberH">5</td>
+                    </tr>
+                    <!--第６周期-->
+                    <tr>
+                        <td class="numberH">6</td>
+                        <td>
+                            <img id="imgW" class="element" onmouseover="pickw();">
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </main>
+        <nav class="HolyGrail-nav">
+            <img id="pick" class="img">
+            <li>沸点：</li>
+            <li>状態：</li>
+        </nav>
+        <aside class="HolyGrail-ads"></aside>
+    </div>
+    <footer>
+        <button id="home" class="turn" onClick="location.href='https://hu-hicoder.github.io/ChemiGatya/home.html'">ホームに戻る</button>
+        <button id="turn" class="turn" onClick="location.href='https://hu-hicoder.github.io/ChemiGatya/'">ガチャを回す</button>
+    </footer>
+    <script type="text/javascript" src="galary.js"></script>
+    <script src="pick.js"></script>
+
+</body>
+
+</html>

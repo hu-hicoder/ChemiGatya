@@ -41,9 +41,6 @@
             border-bottom: none;
         }
 
-        .picture {
-            background-color: lightyellow;
-        }
 
         body {
             background-image: url(photo/home.png);
@@ -52,27 +49,13 @@
             background-color: lightyellow;
         }
 
-        .header {
-            background-color: lightgreen;
-            border-bottom-color: rgb(119, 119, 119);
-            border-bottom-style: solid;
-            border-bottom-width: 4px;
-            display: block;
-            height: 40px;
-            margin-bottom: 0px;
-            margin-left: 0px;
-            margin-right: 0px;
-            margin-top: 0px;
-            min-width: 1000px;
-            padding-bottom: 0px;
-            padding-left: 0px;
-            padding-right: 0px;
-            padding-top: 0px;
-        }
+
     </style>
 </head>
 
 <body>
+
+    <!--ボタン-->
     <div id="push" class="turn" type="button">
         <img src="photo/turn.png" class=turn alt="turn">
     </div>
@@ -81,7 +64,9 @@
         <button id="book" class="galary">ギャラリー</button>
     </div>
 
+
     <script>
+        //乱数
         function getRandomInt(max) {
             return Math.floor(Math.random() * max);
         }
@@ -91,7 +76,6 @@
 
         //ガチャを回す     
         function gatya() {
-            let h, o, cl, f, w, he
             if (a == 0) {
                 localStorage.setItem('result', 'h')
                 localStorage.setItem('h', 'true')
@@ -114,32 +98,25 @@
             else if (a == 4) {
                 localStorage.setItem('result', 'w')
                 localStorage.setItem('w', 'true')
-                localStorage.getItem('w')
             }
-
-
             else if (a == 5) {
                 localStorage.setItem('result', 'he')
                 localStorage.setItem('he', 'true')
-
             }
         }
 
-        const el = document.getElementById("push");
-        el.addEventListener("click", gatya, false);
-
+        //ガチャ結果へのボタン        
         document.getElementById("push")
             .addEventListener("click", function () {
                 location.replace("https://hu-hicoder.github.io/ChemiGatya/gacharesult");
             }, false);
-    </script>
-    <script>
 
-        //ギャラリー
+        //ギャラリーへのボタン
         document.getElementById("book")
             .addEventListener("click", function () {
                 location.replace("https://hu-hicoder.github.io/ChemiGatya/book");
             }, false);
+
     </script>
 </body>
 
