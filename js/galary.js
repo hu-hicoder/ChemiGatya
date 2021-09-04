@@ -491,5 +491,5 @@ let W = localStorage.getItem('w');
         imgW.src = "photo/W.png";
     }
     else{
-        imgW.src = "element/margin.PNG";
+        imgW.src = "element/W.JPG";
     }
