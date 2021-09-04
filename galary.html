@@ -7,25 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ギャラリー</title>
     <style>
-        /*　ボタン　*/
-        .turn {
-            position: relative;
-            display: inline-block;
-            font-weight: bold;
-            padding: 0.5em 1em;
-            text-decoration: none;
-            border-left: solid 4px greenyellow;
-            border-right: solid 4px greenyellow;
-            color: black;
-            background: lightgreen;
-            transition: .4s;
-        }
-
-        .turn:hover {
-            background: greenyellow;
-            color: #FFF;
-        }
-
         .img {
             height: 150px;
             width: 150px;
@@ -62,8 +43,10 @@
             height: 60px;
             width: 60px;
         }
+
     </style>
-    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/btn.css">
 </head>
 
 <body>
@@ -414,8 +397,8 @@
         <button id="turn" class="turn"
             onClick="location.href='https://hu-hicoder.github.io/ChemiGatya/'">ガチャを回す</button>
     </footer>
-    <script type="text/javascript" src="galary.js"></script>
-    <script src="pick.js"></script>
+    <script src="js/galary.js"></script>
+    <script src="js/pick.js"></script>
 
 </body>
 
